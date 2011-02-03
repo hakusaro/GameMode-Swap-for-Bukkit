@@ -62,9 +62,8 @@ public class Template extends JavaPlugin {
         debugees.put(player, value);
     }
     
-    @SuppressWarnings("rawtypes")
     public void debug(String msg){
-        Iterator iterator = debugees.keySet().iterator();
+        Iterator<Player> iterator = debugees.keySet().iterator();
         while (iterator.hasNext()){
             Player ply = (Player)iterator.next();
             ply.sendMessage(msg);
