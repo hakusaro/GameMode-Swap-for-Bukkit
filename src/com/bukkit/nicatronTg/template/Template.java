@@ -18,7 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * Template for Bukkit
  *
- * @author nicatronTg
+ * @author
  */
 public class Template extends JavaPlugin {
     private final TemplatePlayerListener playerListener = new TemplatePlayerListener(this);
