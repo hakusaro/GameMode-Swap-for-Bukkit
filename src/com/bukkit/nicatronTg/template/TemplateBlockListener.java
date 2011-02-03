@@ -3,8 +3,8 @@ package com.bukkit.nicatronTg.template;
 import org.bukkit.event.block.BlockListener;
 
 /**
- * Basic block listener
- * @author nicatronTg
+ * Template block listener
+ * @author 
  */
 public class TemplateBlockListener extends BlockListener {
     private final Template plugin;
