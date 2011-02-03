@@ -1,0 +1,7 @@
+name: Template
+main: com.bukkit.nicatronTg.Template.Template
+version: 0.0
+commands:
+    test:
+      description: Test
+      usage: /<command>
