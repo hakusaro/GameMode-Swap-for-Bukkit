@@ -1,5 +1,5 @@
 name: Template
-main: com.bukkit.nicatronTg.Template.Template
+main: tld.domain.author.plugin.Template
 version: 0.0
 commands:
     test:
