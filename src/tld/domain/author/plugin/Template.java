@@ -1,4 +1,4 @@
-package com.bukkit.nicatronTg.template;
+package tld.domain.author.plugin;
 
 import java.io.File;
 import java.util.HashMap;
@@ -25,10 +25,6 @@ public class Template extends JavaPlugin {
     private final TemplateBlockListener blockListener = new TemplateBlockListener(this);
     private final HashMap<Player, Boolean> debugees = new HashMap<Player, Boolean>();
     
-
-    public Template(PluginLoader pluginLoader, Server instance, PluginDescriptionFile desc, File folder, File plugin, ClassLoader cLoader) {
-        super(pluginLoader, instance, desc, folder, plugin, cLoader);
-    }
 
     public void onEnable() {
 

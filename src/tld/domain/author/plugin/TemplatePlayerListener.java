@@ -1,4 +1,4 @@
-package com.bukkit.nicatronTg.template;
+package tld.domain.author.plugin;
 
 import org.bukkit.event.player.PlayerListener;
 
