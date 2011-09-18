@@ -1,0 +1,7 @@
+name: GmSwap
+main: com.shankshock.nicatronTg.gmswap.GmSwap
+version: 1.0
+commands:
+    gmswap:
+        description: Swaps your gamemode.
+        usage: /<command>

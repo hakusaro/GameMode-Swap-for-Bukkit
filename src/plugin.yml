@@ -1,7 +1,7 @@
-name: Template
-main: tld.domain.author.plugin.Template
-version: 0.0
+name: GmSwap
+main: com.shankshock.nicatronTg.gmswap.GmSwap
+version: 1.0
 commands:
-    test:
-      description: Test
-      usage: /<command>
+    gmswap:
+        description: Swaps your gamemode.
+        usage: /<command>
