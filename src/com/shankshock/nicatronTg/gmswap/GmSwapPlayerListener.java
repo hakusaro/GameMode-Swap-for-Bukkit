@@ -1,10 +1,12 @@
 package com.shankshock.nicatronTg.gmswap;
 
 import org.bukkit.ChatColor;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
-import org.bukkit.event.player.PlayerListener;
 
-public class GmSwapPlayerListener extends PlayerListener {
+public class GmSwapPlayerListener implements Listener {
 	public final GmSwap plugin;
 	
 	public GmSwapPlayerListener(GmSwap Instance)
@@ -12,6 +14,7 @@ public class GmSwapPlayerListener extends PlayerListener {
 		plugin = Instance;
 	}
 	
+	@EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event) {
     	if (event.getMessage().toLowerCase().startsWith("/gamemode"))
     	{

@@ -26,10 +26,11 @@ public class GmSwap extends JavaPlugin {
 
     public void onEnable() {
         PluginManager pm = getServer().getPluginManager();
-        pm.registerEvent(Event.Type.PLAYER_COMMAND_PREPROCESS, playerListener, Priority.High, this);
+        pm.registerEvents(playerListener, this);
         PluginDescriptionFile pdfFile = this.getDescription();
         System.out.println( pdfFile.getName() + " version " + pdfFile.getVersion() + " is now running." );
     }
+    
     public boolean onCommand(CommandSender sender, Command command, String commandLabel, String[] args) {
         String commandName = command.getName().toLowerCase();
         Player ply = (Player)sender;
